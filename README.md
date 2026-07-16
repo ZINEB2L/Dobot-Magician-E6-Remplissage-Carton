@@ -25,7 +25,7 @@ Avant toute mise sous tension, le robot **Dobot Magician E6** doit être solidem
 - Fixer la base à l'aide des vis fournies (4 points de fixation généralement) pour éviter tout mouvement ou vibration pendant le fonctionnement.
 - Vérifier que le robot est bien stable et à niveau avant de continuer.
 
-![Fixation mécanique](images/wiring-1-fixation.jpg)
+![Fixation mécanique](image.png)
 
 ### 1.2 Connexion électrique
 
@@ -39,7 +39,7 @@ Avant toute mise sous tension, le robot **Dobot Magician E6** doit être solidem
 - Le robot dispose d'une adresse IP par défaut : **`192.168.5.1`**.
 - Configurer une IP statique sur le PC dans le même sous-réseau (ex : `192.168.5.2`, masque `255.255.255.0`) pour pouvoir communiquer avec le robot.
 
-![Connexion électrique + Ethernet](images/wiring-2-connexion.jpg)
+![Connexion électrique + Ethernet](cablage-du-robot.jpeg)
 
 > ⚠️ **Important** : le robot doit être complètement démarré (voyant vert stable) avant de tenter une connexion logicielle ou une communication TCP.
 
@@ -57,18 +57,18 @@ DobotStudio Pro est le logiciel officiel permettant de piloter, calibrer et prog
    - Saisir l'IP du robot (`192.168.5.1`) dans l'interface de connexion.
    - Cliquer sur **Connect** — le statut doit passer à "connecté".
 
-![Connexion logiciel DobotStudio Pro](images/wiring-3-dobotstudio.jpg)
+![Connexion logiciel DobotStudio Pro](connexion-DobotStudio.png)
 
 ### 2.1 Vérification des axes et calibration du point zéro
 - Dans DobotStudio Pro, vérifier que les 6 axes répondent correctement au jog manuel.
 - Effectuer la calibration "Home" (retour position zéro) pour s'assurer que le robot est bien référencé avant toute programmation.
 
-![Vérification axes / calibration](images/wiring-4-calibration.jpg)
+![Vérification axes / calibration](%C3%A9talonnage.jpeg)
 
 ### 2.2 Test rapide (cycle de test)
 Avant de passer au code Python, il est recommandé de valider le bon fonctionnement du robot avec un cycle simple directement dans DobotStudio Pro (déplacement → préhension → relâchement).
 
-![Cycle de test](images/wiring-5-cycle-test.jpg)
+![Cycle de test](image-testS1.png)
 
 ---
 
@@ -140,15 +140,13 @@ Le script Python réalise un cycle complet de **pick-and-place** guidé par visi
 .
 ├── README.md                              # Ce guide
 ├── requirements.txt                       # Dépendances Python
-├── src/
-│   └── scenario_remplissage_carton.py     # Code complet du scénario
-├── images/                                # Photos du câblage / installation (à compléter)
-│   ├── wiring-1-fixation.jpg
-│   ├── wiring-2-connexion.jpg
-│   ├── wiring-3-dobotstudio.jpg
-│   ├── wiring-4-calibration.jpg
-│   └── wiring-5-cycle-test.jpg
-└── docs/                                  # Documentation complémentaire (optionnel)
+├── .gitignore
+├── scénario_remplissage_carton.py         # Code complet du scénario
+├── image.png                              # Photo : fixation mécanique
+├── cablage-du-robot.jpeg                  # Photo : connexion électrique + Ethernet
+├── connexion-DobotStudio.png              # Photo : connexion logicielle DobotStudio Pro
+├── étalonnage.jpeg                        # Photo : calibration / vérification des axes
+└── image-testS1.png                       # Photo : cycle de test
 ```
 
 ---
@@ -158,7 +156,7 @@ Le script Python réalise un cycle complet de **pick-and-place** guidé par visi
 Une fois le robot câblé, DobotStudio Pro installé, et les bibliothèques Python installées :
 
 ```bash
-python src/scenario_remplissage_carton.py
+python scénario_remplissage_carton.py
 ```
 
 ⚠️ Avant l'exécution, vérifier/adapter dans le code :
