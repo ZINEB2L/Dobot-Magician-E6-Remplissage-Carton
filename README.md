@@ -25,7 +25,7 @@ Avant toute mise sous tension, le robot **Dobot Magician E6** doit être solidem
 - Fixer la base à l'aide des vis fournies (4 points de fixation généralement) pour éviter tout mouvement ou vibration pendant le fonctionnement.
 - Vérifier que le robot est bien stable et à niveau avant de continuer.
 
-![Fixation mécanique](image.png)
+![Fixation mécanique](/img/image.png)
 
 ### 1.2 Connexion électrique
 
@@ -39,7 +39,7 @@ Avant toute mise sous tension, le robot **Dobot Magician E6** doit être solidem
 - Le robot dispose d'une adresse IP par défaut : **`192.168.5.1`**.
 - Configurer une IP statique sur le PC dans le même sous-réseau (ex : `192.168.5.2`, masque `255.255.255.0`) pour pouvoir communiquer avec le robot.
 
-![Connexion électrique + Ethernet](cablage-du-robot.jpeg)
+![Connexion électrique + Ethernet](/img/cablage-du-robot.jpeg)
 
 > ⚠️ **Important** : le robot doit être complètement démarré (voyant vert stable) avant de tenter une connexion logicielle ou une communication TCP.
 
@@ -57,19 +57,19 @@ DobotStudio Pro est le logiciel officiel permettant de piloter, calibrer et prog
    - Saisir l'IP du robot (`192.168.5.1`) dans l'interface de connexion.
    - Cliquer sur **Connect** — le statut doit passer à "connecté".
 
-![Connexion logiciel DobotStudio Pro](kkkkk.png)
+![Connexion logiciel DobotStudio Pro](/img/kkkkk.png)
 
 
 ### 2.1 Vérification des axes et calibration du point zéro
 - Dans DobotStudio Pro, vérifier que les 6 axes répondent correctement au jog manuel.
 - Effectuer la calibration "Home" (retour position zéro) pour s'assurer que le robot est bien référencé avant toute programmation.
 
-![Vérification axes / calibration](hhhh.jpeg)
+![Vérification axes / calibration](/img/hhhh.jpeg)
 
 ### 2.2 Test rapide (cycle de test)
 Avant de passer au code Python, il est recommandé de valider le bon fonctionnement du robot avec un cycle simple directement dans DobotStudio Pro (déplacement → préhension → relâchement).
 
-![Cycle de test](image-testS1.png)
+![Cycle de test](/img/image-testS1.png)
 
 ---
 
