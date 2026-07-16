@@ -57,7 +57,7 @@ DobotStudio Pro est le logiciel officiel permettant de piloter, calibrer et prog
    - Saisir l'IP du robot (`192.168.5.1`) dans l'interface de connexion.
    - Cliquer sur **Connect** — le statut doit passer à "connecté".
 
-![Connexion logiciel DobotStudio Pro](KKKKK.png)
+![Connexion logiciel DobotStudio Pro](kkkkk.png)
 
 
 ### 2.1 Vérification des axes et calibration du point zéro
