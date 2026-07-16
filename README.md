@@ -63,7 +63,7 @@ DobotStudio Pro est le logiciel officiel permettant de piloter, calibrer et prog
 - Dans DobotStudio Pro, vérifier que les 6 axes répondent correctement au jog manuel.
 - Effectuer la calibration "Home" (retour position zéro) pour s'assurer que le robot est bien référencé avant toute programmation.
 
-![Vérification axes / calibration](etalonnage.jpeg)
+![Vérification axes / calibration](étalonnage.jpeg)
 
 ### 2.2 Test rapide (cycle de test)
 Avant de passer au code Python, il est recommandé de valider le bon fonctionnement du robot avec un cycle simple directement dans DobotStudio Pro (déplacement → préhension → relâchement).
